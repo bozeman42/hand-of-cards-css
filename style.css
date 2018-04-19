@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-face {
+  height: 200px;
+  width: 150px;
+  position: relative;
+  background-color: white;
+  border: 1px black solid;
+  margin: 0px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.4);
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  transition-duration: 75ms;
+  margin: 0px;
+}
+
+.card:nth-child(odd){
+  transform: rotate(-1deg);
+}
+
+.card:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+.card:hover {
+  width: 150px;
+  transform: scale(1.25) rotate(-5deg);
+}
