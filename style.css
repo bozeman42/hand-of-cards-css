@@ -15,14 +15,17 @@ html, body {
 }
 
 .card-face {
-  height: 200px;
+  
+  height: 218px;
   width: 150px;
   position: relative;
   background-color: white;
   border: 1px black solid;
   margin: 0px;
-  border-radius: 5px;
+  border-radius: 7px;
   box-shadow: 2px 2px 4px rgba(0,0,0,.4);
+  background-image: url('./king.png');
+  background-size: contain;
 }
 
 .card {
